@@ -39,18 +39,19 @@ int main() {
 	}
 	else if (x < 0) {
 		y = abs(x);
+		std::cout << y << std::endl;
 	}
 
 // 5
 	int palec;
 	std::cin >> palec;
-	if (palec > 1 && palec < 5) {
-		switch (palec) {
-		case 1: std::cout << "Большой" << std::endl;  break;
-		case 2: std::cout << "Указательный" << std::endl;  break;
-		case 3: std::cout << "Средний" << std::endl;  break;
-		case 4: std::cout << "Безымянный" << std::endl;  break;
-		case 5: std::cout << "Мизинец" << std::endl;  break;
+	switch (palec) {
+	case 1: std::cout << "Большой" << std::endl;  break;
+	case 2: std::cout << "Указательный" << std::endl;  break;
+	case 3: std::cout << "Средний" << std::endl;  break;
+	case 4: std::cout << "Безымянный" << std::endl;  break;
+	case 5: std::cout << "Мизинец" << std::endl;  break;
+	default << "error" << std::endl; 
 		}
 		return 0;
 }
